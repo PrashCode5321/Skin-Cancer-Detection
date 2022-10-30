@@ -1,0 +1,32 @@
+Image Denoising
+https://www.etutorialspoint.com/index.php/308-python-opencv-image-filtering
+
+CLAHE Enhancement
+https://www.geeksforgeeks.org/clahe-histogram-eqalization-opencv/
+
+Contrast Stretching 
+https://stackoverflow.com/questions/42257173/contrast-stretching-in-python-opencv
+
+Gamma Correction
+https://stackoverflow.com/questions/61695773/how-to-set-the-best-value-for-gamma-correction
+
+Otsu Thresholding
+https://www.geeksforgeeks.org/python-thresholding-techniques-using-opencv-set-3-otsu-thresholding/
+
+Determinant of Hessian or Connected Components (Blob detection)
+https://towardsdatascience.com/image-processing-blob-detection-204dc6428dd
+
+Edge Detection
+https://www.geeksforgeeks.org/python-program-to-detect-the-edges-of-an-image-using-opencv-sobel-edge-detection/
+
+Segment the detected features
+https://www.geeksforgeeks.org/region-and-edge-based-segmentaion/
+https://stackoverflow.com/questions/9372687/masking-a-blob-from-a-binary-image
+
+
+
+
+
+
+
+
