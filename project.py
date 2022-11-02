@@ -5,7 +5,7 @@ import time
 
 #INPUT IMAGES
 images = ['benign/'+i for i in os.listdir('benign')]
-#images += ['malignant/'+i for i in os.listdir('malignant')]
+# images += ['malignant/'+i for i in os.listdir('malignant')]
 images += ['malignant/'+i for i in os.listdir('malignant')]
 
 def CLAHE(img : np.ndarray) -> np.ndarray:
@@ -125,9 +125,9 @@ def img_prc(image : np.ndarray) -> np.ndarray:
     contours, _ = cv2.findContours(gray, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     areas = [(cv2.contourArea(c), c) for c in contours if cv2.contourArea(c) < int(0.9*img.shape[0]*img.shape[1])]
     cnt = sorted(areas, key=lambda x: x[0], reverse=True)[0][1]
-    area = cv2.contourArea(cnt)
-    perimeter = cv2.arcLength(cnt, True)
-    print(perimeter/(area**0.5))
+    # area = cv2.contourArea(cnt)
+    # perimeter = cv2.arcLength(cnt, True)
+    # print(perimeter/(area**0.5))
 
     #EDGE DETECTION
     new_mask = np.zeros(img.shape, np.uint8)
