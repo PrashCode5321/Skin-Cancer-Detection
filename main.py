@@ -5,8 +5,8 @@ import time
 
 # Input Image of skin Lesion
 images = ['benign/'+i for i in os.listdir('benign')]
-# images += ['malignant/'+i for i in os.listdir('malignant')]
-images += ['dataset/'+i for i in os.listdir('dataset')]
+images += ['malignant/'+i for i in os.listdir('malignant')]
+# images += ['dataset/'+i for i in os.listdir('dataset')]
 
 for image_name in images:
     img = cv2.imread(image_name)

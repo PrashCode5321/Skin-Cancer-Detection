@@ -87,7 +87,6 @@ def morphImg(image : np.ndarray) -> np.ndarray:
     morph = cv2.erode(morph, kernel, iterations=4)
    
     for i in range(3):
-        
         morph = cv2.morphologyEx(morph,cv2.MORPH_CLOSE,kernel, iterations = 1)
         morph = cv2.erode(morph, kernel, iterations=1)
         morph = cv2.morphologyEx(morph,cv2.MORPH_OPEN,kernel, iterations = 1)
@@ -155,9 +154,9 @@ for image_name in images:
     while True:
         if cv2.waitKey(0):
             break
-        if cv2.waitKey('q'):
-            close_all = True
-            break
+        # if cv2.waitKey('q'):
+        #     close_all = True
+        #     break
     cv2.destroyAllWindows()
-    if close_all:
-        break
+    # if close_all:
+    #     break
